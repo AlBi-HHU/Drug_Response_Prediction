@@ -1,0 +1,18 @@
+envfile: 'env.yaml'
+
+ # possible solvers: TGDRP, TGDRPid, TGSA, TGSAid, MMLP, MMLPmut, MMLPcnv, MMLPexp, MMLPcosmic, MMLPcosmicmut, MMLPcosmiccnv, MMLPcosmicexp, MMLPid (only used for record-wise), meanpredictor
+ # TGSA can only be run after having run TGDRP
+solver: [MMLP]
+
+# format: cell_feature_input(s).drug_feature_input(s).drug_response_output
+# drug_feature_input(s) will be ignored for models not needing SMILES (e.g., MMLP)
+# if multiple cell or drug feature input files, sort them alphabetically and separate them by hyphen
+# example: cnv_all-exp_tpm-mut_all.drug_smiles_GDSC2.pancancer_ic_pubchem_gdsc2
+# for GDSC2, if you use drug_feature_input(s), remember to use drug_response_output files with only pubchem drugs (our created files from preprocess_data.ipynb in the data folder have '_pubchem' in their names); for CCLE, this is not necessary as all 24 drugs are PubChem drugs
+inputs: [cnv_all-exp_tpm-mut_all.drug_smiles_GDSC2.pancancer_ic_pubchem_gdsc2]
+
+n_splits: 5 # k in k-fold cross-validation
+
+resampling: [recordwise, subjectwise] # record-wise, subject-wise, or target-wise resampling (without hyphen); MMLP cannot be run target-wise
+
+metric: [RMSE] # plot RMSE or CCC

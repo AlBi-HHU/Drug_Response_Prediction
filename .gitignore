@@ -1,0 +1,10 @@
+data/.ipynb_checkpoints/
+data/Bulk_Cell_line_Genomic_Data/Cell_Model_Passports/CNV/
+data/Bulk_Cell_line_Genomic_Data/Cell_Model_Passports/GE/
+data/Bulk_Cell_line_Genomic_Data/Cell_Model_Passports/MUT/
+data/CCLE_Data/OmicsCNGene.csv
+data/CCLE_Data/OmicsExpressionProteinCodingGenesTPMLogp1.csv
+data/CCLE_Data/OmicsSomaticMutations.csv
+data/GDSC_Genetic_Features/
+features/
+targets/
