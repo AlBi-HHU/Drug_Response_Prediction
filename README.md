@@ -1,6 +1,6 @@
 # Drug_Response_Prediction
 
-Welcome! This is the git repository of the paper "Promoting further research and progress in drug response prediction data and models".
+Welcome! This is the git repository of the paper "Drug response prediction: A critical systematic review of current datasets and methods".
 
 To run the workflow, please do the following:
 
