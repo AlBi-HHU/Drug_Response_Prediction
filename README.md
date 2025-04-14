@@ -24,4 +24,4 @@ For questions regarding running the five repetitions mentioned in the end of the
 
 For questions regarding obtaining the same figures as in the paper containing the results for each separate kind of data, (e.g., applying MMLP on gene expression data only and plotting it in the figure as MMLPexp), see for example scripts/MMLPexp.py.
 
-The x-axis labels in the paper with the sub- and superscripts were modified using Inkscape.
+The y-axis labels in the paper with the sub- and superscripts were modified using Inkscape.
