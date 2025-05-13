@@ -299,7 +299,7 @@ def process_inputs_and_output(inputs, solver):
         smiles = smiles.loc[y.columns.astype(int)]
         x_drug = []
         for i, s in enumerate(smiles.iloc[:, 1]): # [i, 0]: drug name, [i, 1]: canonical smiles, [i, 2]: isomeric smiles
-            if solver == 'TGDRPid' or solver == 'TGSAid': # baseline test 3: for testing TGDRP/TGSA with dummy molecular graph
+            if solver == 'TGDRPid' or solver == 'TGSAid': # baseline test 3: for testing TGDRP/TGSA with dummy molecule graph
                 x_drug.append(dummy_drug_graph(len(smiles), i))
             else:
                 x_drug.append(smiles2graph(s, solver))
